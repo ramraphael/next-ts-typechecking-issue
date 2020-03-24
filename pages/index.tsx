@@ -1,4 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
+
+// let val: number = 1;
+// val = false;
 
 const Home = () => (
   <div className="container">
@@ -6,6 +10,10 @@ const Home = () => (
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+
+    <Link href="/pageTwo">
+      <a>Go to page two</a>
+    </Link>
 
     <main>
       <h1 className="title">
@@ -198,6 +206,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
